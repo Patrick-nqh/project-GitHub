@@ -1,0 +1,794 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style: none;
+}
+/* phan mac dinh  */
+
+.wrap{
+    width:100%;
+}
+/* phan hearder */
+
+
+/* ket thuc hearder */
+/* bat dau search */
+.search{
+    margin: 0px;
+    width: 100%;
+    background-color: #3695e5;
+    height: 120px;
+    display: inline-block;
+}
+.search_content{
+    width: 98%;
+    margin: auto auto;
+    height: 80px;
+}
+/* logo trang web  */
+.logo{
+    width: 10%;
+    padding: 18px 2cm;
+    padding-right: 0;
+    
+}
+.logo img{
+    position: relative;
+    height: 70px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    top: -6px;
+}
+.logo img:hover{
+    box-shadow: 0 5px 15px -5px #466177;
+    transform: scale(1.02);
+}
+.logo,.search_box,.menu_search{
+    float: left;
+    margin: 0 auto;
+}
+/* khung tim kiem */
+.search_box{
+    width: 680px;
+    padding: 30px 40px;
+    padding-left:0 ;
+}
+.search_box>form{
+    padding: 5px 5px;
+    background: #3695e5;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid #466177;
+    transition: 0.2s;
+}
+.search_box>form>input{
+    width: 580px;
+    height: 50px;
+    font-size: 24px;
+   background: none;
+    padding-left: 20px;
+    border: none;
+    border-right: 2px solid #466177;
+}
+.search_box>form>button{
+    height: 54px;
+    font-size:24px ;
+    border-radius: 27px;
+    width: 54px;
+    background: none;
+    border: none;
+    
+}
+.search_box>form:hover{
+    background: #2872af;
+    transform: scale(1.05);
+}
+
+.menu_search{
+    width: 55%;
+    position: relative;   
+}
+.menu_search ul li{
+   display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 40px 10px;
+    position: relative;
+    height: 100%;
+    width: 170px;
+  top: -7px;
+
+    transition: 0.2s;
+}
+
+.menu_search ul li:hover{
+    background: #1f68a5;
+    transform: scale(1.05);
+}
+.menu_search ul li a{
+    font-weight: 500;
+}
+
+/* noi dung */
+.content{
+    width: 100%;
+    background: #d5d5e0;
+    height: 3000px;
+    list-style: none;
+    background-size: cover;
+    margin-top: -5px;
+}
+/* noi dung 2-------------------------------------------------- */
+.content-2{
+    width: 100%;
+    background: #d5d5e0;
+    height: 1160px;
+    list-style: none;
+    background-size: cover;
+    margin-top: -5px;
+}
+/* noi dung 3--------------------------------------------------------- */
+
+.content-3{
+    width: 100%;
+    background-image: url("/Img/photo-1483389127117-b6a2102724ae.jpg");
+    height: 1160px;
+    list-style: none;
+    background-size: cover;
+    margin-top: -5px;
+}
+
+
+.product{
+    width: 80%;
+    float: left;
+    font-size: 18px;
+}
+.product-wrap{
+    width: 100%;
+    margin-left: 40px;
+    float: left;
+}
+
+.product_content>a>img{
+    width: 200px;
+    height: 320px;
+    height: 240px;
+    padding: 50px 10px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 8px;
+}
+.product_content>a>img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px 0px black;
+}
+.product_content>a>b:hover{
+   color: #2d85ce;
+}
+.product_content>a{
+    float: left;
+    width: 220px;
+    height: 400px;
+    margin: 80px 40px;
+    text-align: center;
+}
+.product_content>a>b{
+    font-size: 26;
+}
+
+
+.danh-muc{
+    width: 20%;
+    font-size: 18px;
+   float: right;
+   text-align: center;
+}
+
+.menu{
+    width: 360px;
+    margin: 60px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu>li{
+    margin-top: 5px;
+    background: #2d85ce;
+    padding: 0px 40px;
+    position: relative;
+}
+.menu>li>a{
+   
+    display: block;
+    padding: 20px 0;
+    font-weight: bold;
+   
+    font-size: 22px;
+}
+
+
+
+
+.sub-menu{
+    position: absolute;
+    display: none;
+    width: 240px;
+    right: 100%;
+    top: -4px;
+    padding-right: 5px;
+   
+}
+
+.sub-menu>li{
+    position: relative;
+    margin-top: 5px;
+    background: #2d85ce;
+    padding: 0px 40px;
+    
+
+}
+.sub-menu>li>a{
+    display: block;
+    padding: 20px 0;
+}
+
+.super-menu{
+    position: absolute;
+    display: none;
+    width: 200px;
+    right: 100%;
+    top: -5px;
+    padding-right: 5px;
+}
+.super-menu>li{
+    position: relative;
+    margin-top: 5px;
+    background: #2d85ce;
+    padding: 0px 40px;
+    
+}
+.super-menu>li>a{
+    display: block;
+    padding: 20px 0;
+    
+}
+.super-menu-2{
+    position: absolute;
+    display: none;
+    width: 200px;
+    right: 100%;
+
+    top: -5px;
+    padding-right: 5px;
+  
+}
+.super-menu-2>li{
+    margin-top: 5px;
+    background: #2d85ce;
+    padding: 0px 40px;
+
+}
+.super-menu-2>li>a{
+    display: block;
+    padding: 20px 0;
+}
+
+.menu>li:hover .sub-menu{
+    display: block;
+}
+.sub-menu>li:hover .super-menu{
+    
+    
+  display: block;
+}
+.super-menu>li:hover .super-menu-2{
+  display: block;
+}
+.menu a:hover{
+    transform: scale(1.15);
+}
+
+
+.menu>li:hover {
+   background: #1f68a5;
+}
+.sub-menu>li:hover {
+    
+    background:#1f68a5 ;
+    
+}
+.super-menu>li:hover {
+    background: #1f68a5;
+}
+.super-menu-2>li:hover {
+    background: #1f68a5;
+}
+
+
+
+
+
+
+/*chu thich  */
+.small_txt{
+    width: 100%;
+    height: 350px;
+    background: rgb(131, 146, 165);
+    display: inline-block;
+    text-align: center;    
+    font-family:"Brush Script MT"," Brush Script Std", cursive;
+    font-size: 25px;
+}
+.small_paragraph{
+    height: 100px;
+    padding: auto auto;
+}
+.small_icon{
+    width: 100%;
+   
+   
+}
+.social_icon{
+    width: 16%;
+    margin: 10px auto;
+    margin-top: 60px;
+   
+}
+.small_icon li{
+    padding: 10px 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    float: left;
+    list-style: none;
+    align-content: center;
+   
+}
+.social-fb{
+    background: rgb(57, 94, 214);
+}
+.social-tw{
+    background: rgb(94, 181, 252);
+}
+.social-gg{
+    background: rgb(184, 80, 80);
+}
+.social-in{
+    background: rgb(16, 53, 122);
+}
+.social-gh{
+    background:rgb(211, 206, 206);
+}
+.social_icon i{
+    font-size: 22px;
+}
+
+.social_icon li:hover{
+    box-shadow: 0 10px 25px -5px #00000070;
+    transform: scale(1.3);
+}
+.author {
+    height: 150px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.author p{
+    margin-top: 70px;
+}
+
+
+
+
+
+
+/*----------------------------------LOGIN-------------------------------------------------------*/
+
+
+.login-box{
+    width: 500px;
+    height: 440px;
+    background: rgba(82, 82, 82,0.8);
+    color:#fff ;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+.login-box h1{
+    font-size: 30px;
+    text-align: center;
+     margin: 0;
+     padding: 0 0 20px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+}
+.login-box input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: #3695e5;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 1s;
+}
+.login-box input[type="submit"]:hover{
+
+    background: rgb(53, 103, 170);
+    transform: scale(1.05);
+}
+.login-box a{
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 20px;
+    transition: 0.75s;
+}
+.login-box a:hover{
+    color: rgb(187, 187, 187);
+}
+
+.login-box input[type="text"]:hover ,input[type="password"]:hover{
+    transform: scale(1.05);
+}
+.login-box img:hover{
+    transform: scale(1.05);
+}
+
+/*  ----------------------dang ky-------------------------------------- */
+.create-box{
+    width: 500px;
+    height: 700px;
+    background: rgba(82, 82, 82,0.8);
+    color:#fff ;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.create-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+.create-box h1{
+    font-size: 30px;
+    text-align: center;
+     margin: 0;
+     padding: 0 0 20px;
+}
+.create-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.create-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+}
+.create-box input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.create-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: #3695e5;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 1s;
+}
+.create-box input[type="submit"]:hover{
+
+    background: rgb(53, 103, 170);
+    transform: scale(1.05);
+}
+.create-box i{
+    width: 30px;
+    line-height: 50px;
+    padding: 0 0;
+    font-size: 25px;
+
+    
+}
+.create-box li{
+    width:100%;
+    padding: 0;
+    margin: 0;
+   text-align: center;
+}
+
+.create-box i:hover{
+    transform: scale(1.3);
+}
+.create-box input[type="text"]:hover{
+    transform: scale(1.05);
+}
+
+
+.create-box img:hover{
+    transform: scale(1.05);
+}
+/* -----------------------------------lost account---------------------------------------------------------- */
+
+
+
+
+
+.lost-box{
+    width: 500px;
+    height: 560px;
+    background: rgba(82, 82, 82,0.8);
+    color:#fff ;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.lost-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+.lost-box h1{
+    font-size: 30px;
+    text-align: center;
+     margin: 0;
+     padding: 0 0 20px;
+}
+.lost-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.lost-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+}
+.lost-box input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.lost-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: #3695e5;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 1s;
+}
+.lost-box input[type="submit"]:hover{
+
+    background: rgb(53, 103, 170);
+    transform: scale(1.05);
+}
+.lost-box i{
+    width: 30px;
+    line-height: 50px;
+    padding: 0 0;
+    font-size: 25px;
+
+    
+}
+.lost-box li{
+    width:100%;
+    padding: 0;
+    margin: 0;
+   text-align: center;
+}
+.lost-box i:hover{
+    transform: scale(1.3);
+}
+.lost-box input[type="text"]:hover{
+    transform: scale(1.05);
+}
+
+.lost-box img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+/* --------------product----------------- */
+
+.laptop{
+    width: 80%;
+    float: left;
+}
+
+.info-lap{
+    width: 55%;
+  
+    float: left;
+}
+.img-lap{
+    width: 600px;
+    height: 400px;
+   margin: 100px 150px;
+    background: white;
+    border-radius: 8px;
+}
+.img-lap>img{
+    height: 350px;
+   padding: 25px 100px;
+}
+.img-lap>img:hover{
+    transform: scale(1.05);
+}
+
+
+.buy-laptop{
+    width: 610px;
+    height: 80px;
+    margin: -70px 150px;
+}
+.buy-laptop>button{
+    font-size: 26px;
+    width: 290px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #2d85ce;
+   border: none;
+   margin-left: 5px; ;
+   transition: 0.2s;
+}
+.buy-laptop>button:hover{
+    background: #0e548d;
+    font-size: 27px;
+}
+
+.message{
+    width: 610px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    margin: 40px 20px;
+    margin-left: 145px;
+    border-radius: 8px;
+    background: #adadad;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+.message>form>p{
+    font-size: 28px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #2b4d69;
+}
+.message textarea{
+    width: 90%;
+    height: 150px;
+    font-size: 22px;
+    border-radius: 8px;
+    margin-left: 25px;
+    background: none;
+    border: 2px solid black;
+}
+
+.message button{
+    font-size: 24px;
+    padding: 20px 180px;
+    margin: 10px 100px;
+    background: #2d85ce;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.message button:hover{
+   transform: scale(1.02);
+    background:#0e548d ;
+}
+
+/* about laptop */
+
+
+.about-laptop{
+    width: 40%;
+    float: left;
+   
+    font-size: 22px;
+    line-height: 70px;
+    overflow: hidden;
+    margin: 40px 45px;
+    margin-top: 80px;
+    border-radius: 8px;
+    height: 1000px;
+    border: 2px solid black;
+    position: relative;
+    left: -80px;
+    
+}
+.about-frame{
+    width: 90%;
+    margin: 20px 40px;
+    
+
+}
+
+.about-laptop>p{
+   display: block;
+}
