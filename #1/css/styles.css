@@ -21,7 +21,7 @@ ul li{
 /* phan mac dinh  */
 
 .wrap{
-    width:100%;
+    width:2400px;
 }
 /* phan hearder */
 
@@ -126,11 +126,14 @@ ul li{
     font-weight: 500;
 }
 
-/* noi dung */
+/* noi dung -------------------------------*/
 .content{
     width: 100%;
     background: #d5d5e0;
-    height: 3000px;
+   /* test------- */
+   height: 1360px;
+   overflow:hidden;
+   /* end test---- */
     list-style: none;
     background-size: cover;
     margin-top: -5px;
@@ -160,17 +163,43 @@ ul li{
     width: 80%;
     float: left;
     font-size: 18px;
+    height: 1260px;
+    margin-top:10px ;
+    overflow:hidden;
+    
+    overflow-y: scroll;
 }
+
+
+
+.product::-webkit-scrollbar{
+    width: 10px;
+    background-color: #d5d5e0;
+    
+}
+.product::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #2d85ce;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+}
+/* .product::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    
+} */
+
+
 .product-wrap{
+    margin-top:50px ;
     width: 100%;
     margin-left: 40px;
     float: left;
+    position: relative;
+    left: 50px;
 }
 
 .product_content>a>img{
     width: 200px;
-    height: 320px;
-    height: 240px;
+    height: 280px;
     padding: 50px 10px;
     margin: 10px auto;
     background: white;
@@ -727,7 +756,7 @@ ul li{
     margin: 40px 20px;
     margin-left: 145px;
     border-radius: 8px;
-    background: #adadad;
+    background: #c2c2c2;
     overflow: hidden;
     border: 2px solid black;
 }
@@ -767,7 +796,7 @@ ul li{
 
 
 .about-laptop{
-    width: 40%;
+    width: 700px;
     float: left;
    
     font-size: 22px;
