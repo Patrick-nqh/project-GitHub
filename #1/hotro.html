@@ -13,12 +13,11 @@
 <body>
 
     <div class="wrap">
-        <!--  start hearder -->
-        
-        <!-- end hearder -->
+
 
         <!-- bat dau search -->
-        <div class="search">
+        
+            <div class="search">
             <!-- start content tim kiem -->
             <div class="search_content">
                 <!-- logo trang web -->
@@ -30,10 +29,10 @@
                 <!-- vung tim kiem -->
                 <div class="search_box">
                     <form action="#">
-                            <input type="text" class="input_txt" name="search" placeholder="  Tim kiem...">
-                            <button class="input_icon">
-                                    <a href=""><i class="fas fa-search"></i></a>
-                            </button>
+                        <input type="text" class="input_txt" name="search" placeholder="  Tim kiem...">
+                        <button class="input_icon">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </button>
                     </form>
                 </div>
                 <!-- ket thuc vung tim kiem -->
@@ -43,29 +42,32 @@
                         <li>
                             <!-- trang chu -->
                             <a href="index.html">Trang chu <i class="fas fa-home"></i></a>
-                            
+
                         </li>
                         <li>
                             <!-- dang nhap -->
-                            <a href="login.html">Login  <i class="fas fa-sign-in-alt"></i></a>
-                            
-                           
+                            <a href="login.html">Login <i class="fas fa-sign-in-alt"></i></a>
+
+
                         </li>
                         <!-- gio hang  -->
                         <li>
                             <a href="giohang.html">Gio hang <i class="fas fa-shopping-cart"></i></a>
-                            
+
                         </li>
                         <!-- thong bao -->
-                        <li>
+                        <li class="thong-bao">
                             <!-- danh muc -->
-                            <a href="thongbao.html">Thong bao <i class="fas fa-envelope-open"></i></a>
-                            
+                            <a href="">Thong bao <i class="fas fa-envelope-open"></i></a>
+                            <ul class="sub-thong-bao">
+                                <li><a href="">Khuyen mai</a></li>
+                                <li><a href="">Don hang dang duoc van chuyen</a></li>
+                            </ul>
                         </li>
                         <!-- ho tro -->
                         <li>
                             <a href="#">Ho tro <i class="fas fa-user-cog"></i></a>
-                            
+
                         </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -77,55 +79,175 @@
 
         </div>
         <!-- ket thuc search -->
-        
+
         <div class="clearfix"></div>
         <!-- noi dung web -->
-        <div class="content">
-            
-         
-            <!-- all san pham -->
-            
-            <!-- end product -->
+        <div class="content-2">
+                <div class="point-home">
+                        <a href="#help-header"><i class="fas fa-angle-double-up"></i></a>
+                    </div>
+            <div class="help-header">
+                <h1 id="help-header">DO YOU NEED HELP?</h1>
+                <div class="help-item">
+                     <a href="#tu-van">Tu van mua hang</a>
+                    <button><a href=""><i class="fas fa-angle-right"></i></a></button>
+                </div>
+                <div class="help-item">
+                    <a href="#gop-y">Gop y / Khieu nai</a>
+                    <button><a href=""><i class="fas fa-angle-right"></i></a></button>
+                </div>
+                <div class="help-item">
+                   <a href="#lien-he"> Danh sach chi nhanh</a>
+                    <button><a href=""><i class="fas fa-angle-right"></i></a></button>
+                </div>
+                <div class="help-item">
+                        <a href="#lien-he">Lien he</a>
+                        <button><a href=""><i class="fas fa-angle-right"></i></a></button>
+                    </div>
+            </div>
+            <div class="parallax"><div class="parallax-wrap"></div></div>
+            <div class="a-q">
+                <p id="tu-van">Tu van mua hang</p>
+                <form action="">
+                    <input type="text" placeholder="Write here">
+                    <input type="submit" value="Gui cau hoi">
+                </form>
+                <div class="cau-hoi-thuong-hoi">
+                    <p>Nhung cau hoi thuong gap</p>
+                    <a href="">Bảo hành như thế nào?</a>
+                    <a href="">Có được đổi trả không? </a>
+                    <a href="">Chính sách giao hàng tận nhà không? </a>
+                    <a href="">Làm thế nào để được mua hàng theo chính sách</a>
+                    <a href="">Chinh sach khuyen mai?</a>
+                    <a href="">Cach thuc thanh toan qua the?</a>
+                    <a href="">Chinh sach uu dai sinh vien?</a>
+                    <a href="">Lua chon may phu hop voi nhu cau?</a>
+                    <a href="">Mua may phu hop voi chi tra?</a>
+                    <a href="">Nhung phu kien theo kem?</a>
+                    <a href="">ipsum dolor  Quos, suscipit?</a>
+                    <a href="">orem ipsum dolor sit amet.</a>
+                </div>
+            </div>
+            <div class="parallax-2"><div class="parallax-wrap"></div></div>
+            <div class="reply-customer">
+                <p id="gop-y">Gop y / Khieu nai</p>
+                <form action="">
+                    <div class="tot-xau">
+                            <div class="tot-xau-item">
+                                <input type="checkbox">
+                                <span>Chung toi da lam tot</span>
+                            </div>
+                            <div class="tot-xau-item">
+                                <input type="checkbox">
+                                <span>Chung toi chua lam tot</span>
+                            </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="reply-item">
+                            <span>Noi dung phan hoi</span>
+                            <select name="" id="" >
+                                <option value="dich vu">Chat luong phuc vu</option>
+                                <option value="san pham">Chat luong san pham</option>
+                                <option value="khac">Khac</option>
+                            </select>
+                    </div>
+                    <div class="reply-content">
+                        <input type="text" placeholder="Write here">
+                        <input type="submit" value="Gui phan hoi">
+                    </div>
+                </form>
+            </div>
+           <div class="parallax-3"> <div class="parallax-wrap"></div></div>
+            <div class="help-info" id="lien-he">
+                <div class="about-shop" >
+                    <b>Thong tin ve shop</b>
+                     <p>    <a href="">History</a> 
+                        <br><a href="">Acts</a>
+                        <br><a href="">Source</a>
+                    </p>
+                </div>
+                <div class="list-store">
+                    <b>Danh sach cua hang</b>
+                    <p>     <a href="">TP Ho Chi Minh</a>
+                        <br><a href="">Bao Loc</a>
+                        <br><a href="">Da Lat</a>
+                        <br><a href="">Ha Noi</a> 
+                        <br><a href="">Can Tho</a> 
+                        <br><a href="">Vung Tau</a> 
+                        <br><a href="">Da Nang</a> 
+                        <br><a href="">Nha Trang</a> 
+                        <br><a href="">Phan Thiet</a> 
+                        <br><a href="">Hai Phong</a> 
+
+                    </p>
+                </div>
+                <div class="tech-new">
+                    <b>Thong tin cong nghe</b>
+                    <p>
+                           <a href="">ipsum dolor, sit amet consectetur </a>
+                           <br> <a href="">adipisicing elit. Totam qui veniam</a>
+                            <br> <a href="">minima odio delectus eos, voluptatem </a>
+                            <br> <a href="">iusto, facilis voluptatibus animi </a>
+                            <br> <a href="">praesentium minus,</a>
+                            <br> <a href="">molestiae quos quidem! Nisi aliquam</a>
+                            <br> <a href="">dignissimos architecto qui.</a>
+                    </p>
+                </div>
+                <div class="contact-us">
+                    <b>Lien he tro giup</b>
+                    <p>
+                                 <a href=""><i class="fab fa-facebook"></i>  Fb:facebook.com  </i></a>
+                        <br>    <a href=""><i class="fab fa-google"></i>   Gg:google.com </a>
+                        <br>    <a href=""><i class="fas fa-phone"></i>   Dat mua:0900909949 </a>
+                        <br>    <a href=""><i class="fas fa-phone"></i>   Bao hanh:0000000049 </a>
+                        <br>    <a href=""><i class="fas fa-map-marker-alt"></i>   Dia chi:Address </a>
+                    </p>
+                </div>
+            </div>
+           
+
         </div>
         <!-- ket thuc noi dung chinh -->
         <!-- noi dung phu -->
         <div class="small_txt">
             <div class="small_paragraph">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                    Accusantium autem veritatis temporibus dolorum commodi itaque in magnam impedit,<br> 
-                    cupiditate aliquam consectetur dignissimos exercitationem eaque modi? Fugit voluptatibus cum voluptate totam!</p>
+                    Accusantium autem veritatis temporibus dolorum commodi itaque in magnam impedit,<br>
+                    cupiditate aliquam consectetur dignissimos exercitationem eaque modi? Fugit voluptatibus cum
+                    voluptate totam!</p>
             </div>
             <div class="clearfix"></div>
             <div class="small_icon">
-                    <div class="social_icon">
-                        <li class="social-fb">
-                            <i class="fab fa-facebook-f"></i>
-                        </li>   
-                        
-                            <li class="social-tw">
-                                    <i class="fab fa-twitter"></i>
-                            </li>
-                            <li class="social-gg">
-                                    <i class="fab fa-google"></i>
-                            </li>
-                            <li class="social-in">
-                                <i class="fab fa-linkedin-in"></i>
-                            </li>
-                            <li class="social-gh">
-                                <i class="fab fa-github"></i>
-                            </li>
-                    </div>
+                <div class="social_icon">
+                    <li class="social-fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+
+                    <li class="social-tw">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li class="social-gg">
+                        <i class="fab fa-google"></i>
+                    </li>
+                    <li class="social-in">
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                    <li class="social-gh">
+                        <i class="fab fa-github"></i>
+                    </li>
+                </div>
             </div>
             <div class="clearfix"></div>
             <div class="author">
                 <p>
-                        This is product by Nhom 4
+                    This is product by Nhom 4
                 </p>
             </div>
         </div>
 
     </div>
     <!-- end -->
+    
 </body>
 
 </html>
