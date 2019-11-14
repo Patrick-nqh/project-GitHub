@@ -146,7 +146,7 @@ ul li{
     width: 100%;
     background: #d5d5e0;
    /* test------- */
-   height: 1360px;
+   height: 1160px;
    overflow:hidden;
    /* end test---- */
     list-style: none;
@@ -718,138 +718,140 @@ ul li{
 
 /* --------------product----------------- */
 
-.laptop{
-    width: 80%;
+.laptop-wrap{
+    width: 78%;
+    padding: 20px 20px;
     float: left;
 }
-
-.info-lap{
-    width: 55%;
-  
+.laptop-img{
+    width: 40%;
     float: left;
-}
-.img-lap{
-    width: 600px;
-    height: 400px;
-   margin: 100px 150px;
+    height: 600px;
     background: white;
-    border-radius: 8px;
-}
-.img-lap>img{
-    height: 350px;
-   padding: 25px 100px;
-}
-.img-lap>img:hover{
-    transform: scale(1.05);
-}
+    transition: 0.2s;
 
+}
+.laptop-img>img{
+    margin: 0 80px;
+    height: 100%;
+    
+}
+.laptop-img:hover{
+    transform: scale(1.02);
 
-.buy-laptop{
-    width: 610px;
-    height: 80px;
-    margin: -70px 150px;
 }
-.buy-laptop>button{
-    font-size: 26px;
-    width: 290px;
-    height: 80px;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #2d85ce;
-   border: none;
-   margin-left: 5px; ;
-   transition: 0.2s;
+.laptop-info{
+    width: 60%;
+    float: left;
+    background: #87a7c2;
+    height: 600px;
+    
 }
-.buy-laptop>button:hover{
-    background: #0e548d;
-    font-size: 27px;
+.laptop-info>p{
+    font-size: 30px;
+    display: block;
+    margin-left: 200px ;
+    font-weight: bold;
+    
 }
-
-.message{
-    width: 610px;
-    height: 400px;
-    position: relative;
-    top: 100px;
-    margin: 40px 20px;
-    margin-left: 145px;
-    border-radius: 8px;
-    background: #dadada;
-    overflow: hidden;
-    border: 2px solid black;
-}
-
-
-.message>form>p{
-    font-size: 28px;
-    text-align: center;
-    padding: 10px 10px;
-    color: #2b4d69;
-}
-.message textarea{
-    width: 90%;
-    height: 150px;
+.laptop-info-left{
+    width: 160px;
+    float: left;
     font-size: 22px;
-    border-radius: 8px;
-    margin-left: 25px;
-    background: none;
-    border: 2px solid black;
+   
+    padding-left: 40px;
+   
 }
+.laptop-info-left>p{
+    padding: 15px 0;
+}
+.laptop-info-right>p{
+    padding: 15px 0;
+}
+.laptop-info-right{
+    width: 70%;
+    float: left;
+    font-size: 22px;
+    padding-left: 40px;
+}
+.laptop-info-right>p:hover{
+    text-decoration: underline;
+}
+.laptop-button{
+    display: block;
+    float: left;
+    margin-top: 50px;
+   
 
-.message button{
+}
+.laptop-button>button{
+    width: 280px;
+    height: 80px;
+    margin-left: 160px;
     font-size: 24px;
-    padding: 20px 180px;
-    margin: 10px 100px;
-    background: #2d85ce;
+    border-radius: 28px;
+    background: #5685ac;
     border: none;
-    border-radius: 8px;
     transition: 0.2s;
 }
-.message button:hover{
-   transform: scale(1.02);
-    background:#0e548d ;
+.laptop-button>button:hover{
+    transform: scale(1.05);
+    background: #1f68a5;
 }
 
-/* about laptop */
-
-
-.about-laptop{
-    width: 700px;
+.laptop-about{
+    width: 40%;
     float: left;
-   
+    height: 840px;
+    border-bottom: 1px solid black;
+    background: rgb(229, 239, 245);
+}
+.laptop-about-left{
+    width: 40%;
+    float: left;
     font-size: 22px;
-    line-height: 70px;
-    /* overflow: hidden; */
-    margin: 40px 45px;
-    margin-top: 80px;
-    border-radius: 8px;
-    height: 1000px;
-    border: 2px solid black;
-    position: relative;
-    left: -80px;
-    
 }
-.about-frame{
-    width: 90%;
-    margin: 35px 40px;
-    height: 920px;
-    overflow: hidden;
+.laptop-about-left>p{
+    padding-left: 40px ;
+}
+.laptop-about-right{
+    width: 60%;
+    float: left;
+    font-size: 22px;
+}
+.laptop-about>p{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+.laptop-about-more{
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+}
+.laptop-about-more>button{
+    width: 200px;
+}
+.laptop-mo-ta{
+    width: 60%;
+    float: left;
+    height: 840px;
+    margin-top: 10px;
     overflow-y: scroll;
-    background: white;
-    
-
 }
-.about-frame::-webkit-scrollbar{
-    width: 10px;
-    background-color: #d5d5e0;
+.laptop-mo-ta>p{
+    font-size: 20px;
+    padding: 0 40px;
 }
-.about-frame::-webkit-scrollbar-thumb{
-    border-radius: 5px;
-    background-color: #2d85ce;
-    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+.laptop-mo-ta>h2{
+    padding: 20px 40px;
 }
-
-.about-laptop>p{
-   display: block;
+.laptop-mo-ta>h1{
+    text-align: center;
+    font-size: 28px;
+}
+.laptop-mo-ta>img{
+    width: 100%;
 }
 
 /* ------------------------------------------phieu don xac nhan mua hang--------------------- */
@@ -1236,86 +1238,63 @@ ul li{
 
 
 /* ---------------gio hang------------------------ */
-
 .gio-hang-list{
     width: 100%;
     height: 200px;
-    float: left;
+    background: #2872af;
 }
-.gio-hang-list>h1{
-    width: 1800px;
-    font-size: 45px;
-    background: #66abe4;
-    margin-left: 60px  ;
-    text-align: center;
-    line-height: 100px;
-    margin-top: 60px;
-    border-radius: 8px;
-}
-.gio-hang-wrap{
-    width: 20%;
-    background: cornflowerblue;
-    float: left;
-    margin: 20px 60px;
-    height: 800px;
-    border-radius: 8px;
-}
-.don-hang-header>div>p{
-    font-size: 28px;
+.gio-hang-item{
     width: 100%;
-    height: 80px;
-    text-align: center;
-    float: left;
+    height: 40px;
+    font-weight: bold;
+    
+    padding: 0 80px;
+    font-size: 24px;
     
 }
-.don-hang-wrap{
-    width: 100%;
-    height: 700px;
-    background: white;
-  
+.gio-hang-item>li{
     float: left;
+    width: 240px;
+    text-align: center;
+    border: 2px solid black;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    background: #2c4c66;
+}
+.gio-hang-product{
+    width: 100%;
+    height: 40px;
+   
+    padding: 0 80px;
+    font-size: 20px;
+}
+.gio-hang-product>li{
+    float: left;
+    width: 240px;
+    text-align: center;
+    border: 2px solid black;
+    height: 100%;
+    padding-top: 10px;
+    background: #88b1d3;
+}
+.gio-hang-wrap{
+    width: 100%-400px;
+    height: 740px;
     overflow: hidden;
     overflow-y: scroll;
-
-}
-.don-hang-header>p{
-    font-size: 24px;
-    font-weight: 600px;
-    text-align: center;
-}
-.don-hang-wrap>div{
-    width: 100%-10px;
-    background: rgb(163, 181, 221);
-    height: 80px;
-   margin-top: 20px;
-    font-size: 20px;
-    padding-left: 10px;
-    transition: 0.2s;
-    text-align: center;
-}
-.don-hang-wrap>div:hover{
-    background: rgb(86, 159, 228);
-}
-.don-hang{
     display: block;
-    background: darkorange;
-    line-height: 40px;
+    float: left;
+    margin: 0 100px;
 }
 
-.icon-right{
-    float: left;
-    height: 480px;
-    width: 60px;
-    text-align: center;
-    padding-top: 360px;
-    font-size: 40px;
-}
 .gio-hang-note{
-    width: 400px;
-    font-size: 18px;
-    position: relative;
-    top: 120px;
+    width: 100%;
+    height: 100px;
     float: left;
+    display: block;
+    padding:40px 100px;
+    font-size: 20px;
 }
 
 
@@ -1347,20 +1326,27 @@ ul li{
 }
 
 
+
+
+
+
+
+
+
 /* -------bo xung home-------------- */
 
 .content,.content-2,.content-3,.content-4{
-    animation: transitionIn 0.5s;
+    animation: transitionIn 0.8s;
 }
 
 
 @keyframes transitionIn{
     from{
         opacity: 0;
-        transform: rotateX(-10deg);
+        /* transform: rotateX(-10deg); */
     }
     top{
         opacity: 1;
-        transform: rotateX(0);
+        /* transform: rotateX(0); */
     }
 }
