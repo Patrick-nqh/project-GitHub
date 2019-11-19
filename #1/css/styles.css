@@ -11,6 +11,7 @@ html{
 body{
     font-family: sans-serif;
     font-size: 14px;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -23,6 +24,15 @@ ul li{
 
 .wrap{
     width:2400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+   
+}
+
+.wrap-hotro{
+    width:2400px;
+    position: relative;
 }
 /* phan hearder */
 
@@ -54,7 +64,7 @@ ul li{
     position: relative;
     height: 70px;
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 4px;
     top: -6px;
 }
@@ -77,7 +87,7 @@ ul li{
     background: none;
     border-radius: 30px;
     overflow: hidden;
-    border: 2px solid #466177;
+    border: 1px solid black;
     transition: 0.2s;
 }
 .search_box>form>input{
@@ -87,7 +97,7 @@ ul li{
    background: none;
     padding-left: 20px;
     border: none;
-    border-right: 2px solid #466177;
+    border-right: 1px solid black;
 }
 .search_box>form>button{
     height: 54px;
@@ -178,7 +188,7 @@ ul li{
     width: 80%;
     float: left;
     font-size: 18px;
-    height: 1260px;
+    height: 1400px;
     margin-top:10px ;
     overflow:hidden;
     
@@ -743,7 +753,7 @@ ul li{
 .laptop-info{
     width: 60%;
     float: left;
-    background: #87a7c2;
+    background: rgb(164, 196, 226);
     height: 600px;
     
 }
@@ -803,8 +813,6 @@ ul li{
     width: 40%;
     float: left;
     height: 840px;
-    border-bottom: 1px solid black;
-    background: rgb(229, 239, 245);
 }
 .laptop-about-left{
     width: 40%;
@@ -815,9 +823,13 @@ ul li{
     padding-left: 40px ;
 }
 .laptop-about-right{
-    width: 60%;
+    width: 58%;
     float: left;
     font-size: 22px;
+    border-right: 2px solid black;
+}
+.laptop-about-right>p:hover{
+    text-decoration: underline;
 }
 .laptop-about>p{
     font-size: 28px;
@@ -853,98 +865,6 @@ ul li{
 .laptop-mo-ta>img{
     width: 100%;
 }
-
-/* ------------------------------------------phieu don xac nhan mua hang--------------------- */
-
-
-.order-form{
-   width: 1200px;
-   height: 500px;
-   background: #6daee4; 
-   position: relative;
-   left: 50%;
-   top: 40%;
-   transform: translate(-50%,-50%);
-   font-family: sans-serif;
-   font-size: 22px;
-}
-.order-form form{
-    margin: 30px;
-   
-}
-.order-form h6{
-    margin: 20px;
-}
-.order-form>h1{
-    padding-top: 40px;
-}
-.order-form input{
-    display: block;
-}
-.col-left{
-    width: 20%;
-    float: left;
-}
-.col-right{
-    width: 80%;
-    float: left;
-    position: relative;
-    top: 6px;
-}
-.col-right input{
-    width: 600px;
-    line-height: 30px;
-    margin-bottom: 17px ;
-    border-radius: 12px;
-    /* border: none;
-    background: none;
-    border-bottom: 2px solid black; */
-}
-.col-right select{
-    width: 380px;
-    display: block;
-    height: 30px;
-    margin-bottom: 17px;
-    border-radius: 12px;
-}
-#xac-nhan-mua{
-    margin: 20px 0;
-    height: 50px;
-    width: 280px;
-    float: left;
-    border-radius:8px;
-    background: #3695e5;
-    border: none;
-    transition: 0.2s;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-#quay-lai{
-    margin: 20px 0;
-    height: 50px;
-    width: 280px;
-    float: left;
-    margin-left: 20px;
-    border-radius:8px;
-    background: #3695e5;
-    border: none;
-    transition: 0.2s;
-    font-size: 20px;
-    font-weight: bold;
-}
-.order-form h1{
-    text-align: center;
-}
-#xac-nhan-mua:hover{
-    background: #1f68a5;
-    transform: scale(1.05);
-}
-#quay-lai:hover{
-    background: #1f68a5;
-    transform: scale(1.05);
-}
-
 /* ------------ho tro---------------------------------------- */
 
 
@@ -1002,7 +922,7 @@ ul li{
     transform: scale(1.05);
 }
 
-/* ----------------------Tu van mu hang----------------------------- */
+/* ----------------------Tu van mua hang----------------------------- */
 .a-q{
     width: 100%;
     height: 480px;
@@ -1192,6 +1112,9 @@ ul li{
     background-attachment: fixed;
     width: 100%;
     height: 1000px;
+    /* position: relative;
+    left: 50%;
+    transform: translate(-50%,0); */
 }
 
 .parallax-2{
@@ -1240,12 +1163,20 @@ ul li{
 /* ---------------gio hang------------------------ */
 .gio-hang-list{
     width: 100%;
-    height: 200px;
-    background: #2872af;
+    height: 120px;
+}
+.gio-hang-list>h1{
+    background: #3695e5;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 80px;
+    margin-top: 60px ;
+    border-radius: 40px;
+    
 }
 .gio-hang-item{
     width: 100%;
-    height: 40px;
+    height: 60px;
     font-weight: bold;
     
     padding: 0 80px;
@@ -1264,7 +1195,7 @@ ul li{
 }
 .gio-hang-product{
     width: 100%;
-    height: 40px;
+    height: 60px;
    
     padding: 0 80px;
     font-size: 20px;
@@ -1339,14 +1270,3 @@ ul li{
     animation: transitionIn 0.8s;
 }
 
-
-@keyframes transitionIn{
-    from{
-        opacity: 0;
-        /* transform: rotateX(-10deg); */
-    }
-    top{
-        opacity: 1;
-        /* transform: rotateX(0); */
-    }
-}
